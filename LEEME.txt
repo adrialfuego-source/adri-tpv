@@ -1,0 +1,17 @@
+ADRI AL FUEGO TPV - versión inicial 1.0
+
+ARCHIVOS: index.html, sw.js, manifest.json, icon.svg.
+
+INSTALACIÓN PERMANENTE EN iPAD:
+1. Publica estos cuatro archivos en un alojamiento web estático con HTTPS (por ejemplo, GitHub Pages). Deben estar en la misma carpeta.
+2. Abre la URL publicada desde SAFARI del iPad mini 2 con Internet.
+3. Espera a que termine de cargar, y usa Compartir > Añadir a pantalla de inicio.
+4. Abre desde el icono y realiza pruebas, primero conectado y después en modo avión. No cobres clientes reales hasta verificar ambas pruebas.
+
+ADVERTENCIAS:
+* Abrir index.html desde Archivos de iOS no equivale a instalar la PWA y puede impedir el funcionamiento offline; sirve principalmente para pruebas.
+* El almacenamiento local NO es una base de datos profesional; exporta una copia JSON al acabar cada jornada y consérvala fuera del iPad. No borres datos de Safari ni restablezcas el iPad sin copia.
+* Servicio offline: requiere primera carga correcta por HTTPS y cache del service worker; iOS 12 puede limitar o eliminar datos/caché en condiciones de poco espacio. Comprobar manualmente antes de un evento.
+* No integra ni controla ningún datáfono: cobra físicamente en el terminal y luego registra la venta.
+* No incluye impresión de tickets, facturación fiscal, VeriFactu, sincronización ni cumplimiento de requisitos legales de caja/facturación; no sustituye una solución fiscal validada.
+* Importes en céntimos; productos precargados son editables desde Ajustes.
